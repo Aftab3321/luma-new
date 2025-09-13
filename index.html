@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luma sells vegan products designed specially to support your health.">
+    <title>How to Fix Comulative layout shift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo mobile-logo">
+                        <div class="logo-wrapper">
+                            <img src="/assets/images/main-logo.webp" width="275" height="175" fetchpriority="high" alt="LUMA Logo">
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="mobile-menu-button">
+                            <div class="hamburger" onclick="toggleMenu()">☰</div>
+                        </div>
+                        <div class="offcanvus" id="offcanvas">
+                            <div class="close-btn">
+                                <button  onclick="toggleMenu()" aria-label="Close Menu">✖</button>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li class="nav-logo"><a href="/">
+                                        <img src="/assets/images/main-logo.webp" width="275" height="175" fetchpriority="high" alt="LUMA Logo">
+                                    </a></li>
+                                    <li class="nav-contact"><a href="/contacts">Contact</a></li>
+                                    <li class="nav-about"><a href="/about">About</a></li>
+                                    <li class="nav-products"><a href="/products">Products</a></li>
+                                    <li class="nav-orders"><a href="/orders">Orders</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="hero-section-wrapper section-wrapper">
+                        <div class="hero-section">
+                            <p class="hero-text">
+                                We are on a mission to make healthy, belly supporting, nutrient rich food and drinks. To help you
+                                stay active even when you’re busy.
+                            </p>
+                            <p class="hero-second-text">
+                                We’re making High Protein Bread, Matcha Soda and Protein Water (*that is more like ice tea.)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="products-section-wrapper section-wrapper">
+                        <div class="products-section">
+                            <div class="products-grid">
+                                <div class="product">
+                                    <div class="products-header">
+                                        <div class="product-title">
+                                            <h2 class="subheading outlined-text">
+                                                Matcha
+                                            </h2>
+                                        </div>
+                                        <div class="product-image">
+                                            <div class="product-image--wrapper">
+                                                <img src="/assets/images/matcha-480w.webp" width="268" height="400" fetchpriority="high"  alt="Canned Matcha">
+                                            </div>
+                                            <div class="product-readMore">
+                                                <a href="/products" class="readmore outlined-text">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="products-header">
+                                        <div class="product-title">
+                                            <h2 class="subheading outlined-text">
+                                                Protein <br> Water
+                                            </h2>
+                                        </div>
+                                        <div class="product-image">
+                                            <div class="product-image--wrapper">
+                                                <img src="/assets/images/protein-water-480w.webp" width="268" height="400" fetchpriority="high"  alt="Canned Protein Water">
+                                            </div>
+                                            <div class="product-readMore">
+                                                <a href="/products" class="readmore outlined-text">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="products-header">
+                                        <div class="product-title">
+                                            <h2 class="subheading outlined-text">
+                                                Protein<br> Bread
+                                            </h2>
+                                        </div>
+                                        <div class="product-image">
+                                            <div class="product-image--wrapper">
+                                                <img src="/assets/images/protein-bread-480w.webp" width="268" height="400" fetchpriority="high"  alt="Protein Bread">
+                                            </div>
+                                            <div class="product-readMore">
+                                                <a href="/products" class="readmore outlined-text">More Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="order-section-wrapper section-wrapper">
+                        <div class="order-section">
+                            <div class="order-text">
+                                <a href="/products.html">
+                                    <h2 class="outlined-text">Order</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                        <div class="socials">
+                            <div class="socials-wrapper">
+                              <a href="https://tiktok.com" aria-label="Tiktok Account Link"><i class="bi bi-tiktok"></i> </a>
+                              <a href="https://instagram.com" aria-label="Instagram Account Link"><i class="bi bi-instagram"></i> </a>
+                              <a href="https://wa.me/+92342423234" aria-label="Chat with up on Whatsapp"><i class="bi bi-whatsapp"></i> </a>
+                              <a href="https://facebook.com.messanger" aria-label="Chat with us on Facebook/Messanger"><i class="bi bi-messenger"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-navigation">
+                        <nav>
+                            <ul>
+                                <li><a class="outlined-text" href="/terms">Terms</a></li>
+                                <li><a class="outlined-text" href="/returns">Returns</a></li>
+                                <li><a class="outlined-text" href="/privacy">Privacy</a></li>
+                                <li><a class="outlined-text" href="/blog">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
